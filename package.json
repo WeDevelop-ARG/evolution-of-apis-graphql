@@ -1,10 +1,9 @@
 {
-  "name": "news-service",
+  "name": "evolution-of-apis-graphql",
   "version": "1.0.0",
-  "description": "Provides news from different sources from all over the web.",
+  "description": "Basic usage of GraphQL.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -w src --config .nodemon.json --exec \"babel-node src\"",
     "build": "npm run cleanup && babel src -D -d dist",
     "start": "node dist/index.js",
@@ -14,7 +13,7 @@
     "Node.js",
     "GraphQL"
   ],
-  "author": "Abel M. Osorio <abel.m.osorio@gmail.com>",
+  "author": "Abel M. Osorio <abel@wedevelop.me>",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^2.3.1",
