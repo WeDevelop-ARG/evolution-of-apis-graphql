@@ -4,7 +4,7 @@
   "description": "Basic usage of GraphQL.",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon -w src --config .nodemon.json --exec \"babel-node src\"",
+    "dev": "nodemon -w src --ext js,graphql --config .nodemon.json --exec \"babel-node src\"",
     "build": "npm run cleanup && babel src -D -d dist",
     "start": "node dist/index.js",
     "cleanup": "rm -rf dist"
@@ -19,9 +19,15 @@
     "apollo-server-express": "^2.3.1",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "fs": "0.0.1-security",
     "graphql": "^14.1.1",
     "http": "0.0.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.4",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

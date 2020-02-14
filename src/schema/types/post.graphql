@@ -1,0 +1,13 @@
+type Post {
+  id: Int!
+  title: String!
+  content: String!
+  user: User!
+  followers: [User]
+  createdAt: Date!
+  updatedAt: Date
+}
+
+extend type Query {
+  post(id: Int!): Post
+}
