@@ -16,7 +16,7 @@
   "author": "Abel M. Osorio <abel@wedevelop.me>",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.3.1",
+    "apollo-server-express": "^2.14.2",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
